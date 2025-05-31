@@ -39,6 +39,13 @@ This repository contains three Jupyter notebooks showcasing core machine learnin
   - Built composite features (ejection_fraction × serum_creatinine, ejection_fraction ÷ serum_creatinine, serum_creatinine ÷ time, platelet ÷ serum_creatinine) to capture nonlinear relationships.  
 - **Model Comparison:** Selected the optimal tree depth and method based on mean F1 results.
 
+### 04_unsupervised_learning_kmeans_clustering.ipynb
+Unsupervised clustering on product consumption data:
+- Elbow Method to identify the optimal number of clusters (k=4).
+- KMeans Clustering: Fitted model, predicted clusters, and appended labels to original dataset.
+- Data Transformation & Aggregation: Used melt() and groupby() for reshaping and summarizing cluster-specific consumption patterns.
+- Cluster Analysis: Identified most and least popular products within each cluster.
+- Visualization: Plotted inertia vs. cluster count for optimal k selection using Matplotlib.
 ---
 
 ## 🔧 Skills Demonstrated
@@ -52,7 +59,9 @@ This repository contains three Jupyter notebooks showcasing core machine learnin
 - **Evaluation Metrics**: Root Mean Squared Error (RMSE), Accuracy, F1 Score; use of cross-validation to ensure robust performance estimates.
 - **Visualization & EDA**: Generating distribution plots, histograms, and KDEs to understand data characteristics and identify outliers.
 - **Reproducible Workflows**: Maintaining consistent random states for splits and model training; exporting final results for downstream use.
-
+  **Unsupervised Learning & Clustering**: Applied KMeans clustering and selected optimal number of clusters using the Elbow Method.
+   Used .predict() for label assignment and analyzed cluster-specific patterns through aggregation and reshaping techniques.
+   Interpreted cluster structure via most/least common product features and visualized optimization with inertia plots.
 ---
 
 Feel free to explore each notebook to see detailed code, comments, and insights into a full machine learning pipeline—from raw data to final evaluation.
